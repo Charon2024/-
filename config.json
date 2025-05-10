@@ -1,0 +1,22 @@
+{
+    "filter": {
+        "max_price": 40,
+        "min_limit_up_percent": 9.5,
+        "exclude_st": true,
+        "exclude_sci_tech_board": true,
+        "stock_prefix": ["0", "6"]
+    },
+    "score": {
+        "base_score": 50,
+        "volume_ratio_weight": 5,
+        "turnover_rate_weight": 2,
+        "continuous_limit_up_weight": 10,
+        "amount_weight": 3,
+        "amount_max_score": 15
+    },
+    "output": {
+        "top_count": 10,
+        "output_dir": "output",
+        "auto_open_excel": true
+    }
+} 
